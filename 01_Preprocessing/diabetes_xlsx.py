@@ -9,9 +9,13 @@ no servidor.
 @author: Aydano Machado <aydano.machado@gmail.com>
 """
 
+import os
+from dotenv import load_dotenv
 import pandas as pd
 from sklearn.neighbors import KNeighborsClassifier
 import requests
+
+load_dotenv()
 
 print('\n - Lendo o arquivo com o dataset sobre diabetes')
 data = pd.read_excel('diabetes_dataset.xlsx')
@@ -39,7 +43,7 @@ y_pred = neigh.predict(data_app)
 URL = "https://aydanomachado.com/mlclass/01_Preprocessing.php"
 
 #TODO Substituir pela sua chave aqui
-DEV_KEY = "COLOCAR_SUA_KEY_AQUI"
+DEV_KEY = os.getenv('DEV_KEY')
 
 # json para ser enviado para o servidor
 data = {'dev_key':DEV_KEY,
