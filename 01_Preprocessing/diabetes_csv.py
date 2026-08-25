@@ -17,7 +17,7 @@ import requests
 load_dotenv()
 
 print('\n - Lendo o arquivo com o dataset sobre diabetes')
-data = pd.read_csv('diabetes_dataset.csv')
+data = pd.read_csv('diabetes_dataset_knn.csv')
 
 # Criando X and y par ao algorítmo de aprendizagem de máquina.\
 print(' - Criando X e y para o algoritmo de aprendizagem a partir do arquivo diabetes_dataset')
