@@ -17,8 +17,7 @@ import requests
 load_dotenv()
 
 print('\n - Lendo o arquivo com o dataset sobre diabetes')
-data = pd.read_csv('diabetes_dataset_knn.csv')
-
+data = pd.read_csv('diabetes_dataset_knn_03.csv')
 # Criando X and y par ao algorítmo de aprendizagem de máquina.\
 print(' - Criando X e y para o algoritmo de aprendizagem a partir do arquivo diabetes_dataset')
 # Caso queira modificar as colunas consideradas basta algera o array a seguir.
@@ -27,7 +26,7 @@ feature_cols = ['Pregnancies', 'Glucose', 'BloodPressure', 'SkinThickness',
 X = data[feature_cols]
 y = data.Outcome
 
-# Ciando o modelo preditivo para a base trabalhada
+# Criando o modelo preditivo para a base trabalhada
 print(' - Criando modelo preditivo')
 neigh = KNeighborsClassifier(n_neighbors=3)
 neigh.fit(X, y)
