@@ -1,0 +1,36 @@
+{
+  "SVC (RBF)": {
+    "C": 10,
+    "gamma": 0.03,
+    "features": "todas"
+  },
+  "LogisticRegression": {
+    "C": 100,
+    "features": "razoes"
+  },
+  "kNN": {
+    "n_neighbors": 35,
+    "weights": "distance",
+    "features": "razoes"
+  },
+  "MLP": {
+    "alpha": 0.1,
+    "hidden_layer_sizes": [
+      64,
+      32
+    ],
+    "features": "razoes"
+  },
+  "ExtraTrees": {
+    "max_features": 1.0,
+    "min_samples_leaf": 20,
+    "features": "razoes"
+  },
+  "HistGradientBoosting": {
+    "l2_regularization": 1.0,
+    "max_depth": 2,
+    "max_iter": 300,
+    "min_samples_leaf": 20,
+    "features": "todas"
+  }
+}
