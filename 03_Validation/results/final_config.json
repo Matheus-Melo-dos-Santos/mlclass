@@ -1,0 +1,17 @@
+{
+  "model": "SVC (RBF)",
+  "C": 3.0,
+  "gamma": 0.07,
+  "features": "razoes",
+  "cv_10x3_mean": 0.6678629482071713,
+  "cv_10x3_std": 0.02223101347528266,
+  "best_raw": {
+    "features": "todas",
+    "C": 1.0,
+    "gamma": 0.1,
+    "mean_test_score": 0.6691861885790172,
+    "std_test_score": 0.02125353018284182,
+    "se": 0.003880345969253121,
+    "vizinhanca": 0.6654322561605429
+  }
+}
